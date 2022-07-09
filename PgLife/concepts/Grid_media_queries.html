@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid + Media queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+            /* grid-template-columns: repeat(auto-fit , minmax(400px,1fr)); */
+        }
+        @media (min-width:500px) and (max-width:800px){
+            body{
+                background-color: yellow;
+            }
+            .container{
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width:300px) and (max-width:500px){
+            body{
+                background-color: blue;
+
+            }
+            .container{
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        .bdr{
+            border: 2px solid black;
+            background-color: wheat;
+            padding: 23px class="bdr";
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span-1>
+            <span>About</span-2>
+            <span>Services</span-3>
+            <span>Contact us</span-4>
+        </nav>
+        <section class="bdr">
+            <h2>Learn css</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore aperiam a quas, neque odit similique harum placeat ratione magni quasi eos cum. Dignissimos beatae rem cupiditate! Quisquam, provident autem tenetur excepturi aperiam assumenda ipsum. Asperiores ab qui, iusto nostrum fugiat natus officia consectetur dignissimos. Ad nihil iste pariatur, eveniet obcaecati aperiam sit. Officiis eaque illo, distinctio molestiae reiciendis vel, iste ex aliquam, aliquid soluta ducimus in! Esse nam laborum quos aut mollitia libero recusandae voluptatibus neque inventore provident nemo, et aliquam soluta, assumenda est repellat molestiae? Odio voluptate libero nesciunt! Aspernatur consectetur adipisci reprehenderit cumque nostrum magnam repellendus ut ipsam amet, minima quasi ullam? Repellat, dolor modi? Unde illum aspernatur nulla minima earum reprehenderit ullam ut cum, laborum neque. Eum nulla officiis consequatur neque, repellendus culpa! Ab, asperiores dolorum.</p>
+        </section>
+        <aside class="bdr">
+            <h1>h1>More about us</h1>
+        </aside>
+        <footer class="bdr">code with harry</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var a=78;
+        // var b="Harry";
+        // var c=48.5;
+        // c=-c; //unary operator
+        // console.log(a,b,c);
+        //operator in js
+        //3+4  '+' is operator  3,4 is operand
+        // c=456+4; //binary operator
+
+        // num1=4;
+        // num2=3;
+        //arithmatic operator in js
+        // console.log("this is value of num1 + num2="+ (num1+num2));
+        // console.log("this is value of num1 - num2="+ (num1-num2));
+        // console.log("this is value of num1 * num2="+ (num1*num2));
+        // console.log("this is value of num1 / num2="+ (num1/num2));
+        // console.log("this is value of num1 ** num2="+ (num1**num2));
+        // console.log("this is value of num1++ ="+ (num1++));
+        // console.log("this is value of ++num1 ="+ (++num1));
+
+///////////////////BMI
+        // const massMark=78;
+        // const heightMark=1.69;
+        // const massJohn=92;
+        // const heightJohn=1.95;
+        // const massMark=95;
+        // const heightMark=1.88;
+        // const massJohn=85;
+        // const heightJohn=1.76;
+        // const bmiMark=massMark/heightMark**2;
+        // console.log(bmiMark)
+        // const bmiJohn=massJohn/heightJohn**2;
+        // console.log(bmiJohn)
+
+        // if (bmiMark>=bmiJohn) {
+        //     console.log(`Mark's BMI ${bmiMark} is higher than John's BMI ${bmiJohn}`);
+        // } else {
+        //     console.log(`John's BMI ${bmiJohn} is higher than John's BMI ${bmiMark}`);
+        // }
+
+        // const markHigherBMI=(bmiMark>bmiJohn);
+        // console.log(markHigherBMI)
+
+        // const firstName="John";
+        // const job="Teacher";
+        // const birthYear=1998;
+        // const year=2022;
+
+        // const john="i'm "+ firstName + " ,a "+ (year-birthYear)+ " years old "+ job +"!" ;
+        // console.log(john);
+
+        // const johnNew=`I'm ${firstName} , a ${year-birthYear } year's old ${job}!`;
+        // console.log(johnNew);
+
+        // const age=14;
+        // if (age>=18) {
+        //     console.log(`sarah can start driving license 😊`);
+        // } else {
+        //     const yearsLeft=18-age;
+        //     console.log(`sarah is too young ${yearsLeft} years`)
+        // }
+
+        // const birthYear=1998;
+        // let century;
+        // if(birthYear<=2000){
+        //     century=20;
+        // }
+        // else{
+        //     century=21;
+        // }
+        // console.log(century);
+
+
+        //////////logicalopertaor
+        // const hasDriversLicense=true;
+        // const hasGoodVision=true;
+
+        // console.log( hasDriversLicense && hasGoodVision)
+        // console.log( hasDriversLicense || hasGoodVision)
+        
+        // if (hasDriversLicense && hasGoodVision) {
+        //     console.log(`sarah can drive`)
+        // } else {
+        //     console.log(`sarah cannot drive`)
+        // }
+
+        // challenge
+        // const dolphin=(96+108+89)/3;
+        // const koalas=(88+91+110)/3;
+        // console.log(dolphin, koalas);
+
+        // if(dolphin > koalas){
+        //     console.log("dolphin won the match");
+        // }else if(koalas>dolphin){
+        //     console.log("koalas won the match");
+        // }else if(dolphin === koalas){
+        //     console.log("both team won the match")
+        // }
+///////////Bonus 1
+        // const dolphin=(97+81+101)/3;
+        // const koalas=(98+95+106)/3;
+        // console.log(dolphin, koalas);
+
+        // if(dolphin > koalas && dolphin>=100){
+        //     console.log("dolphin won the match");
+        // }else if(koalas>dolphin && koalas>=100){
+        //     console.log("koalas won the match");
+        // }else if(dolphin === koalas && dolphin>=100 && koalas>=100){
+        //     console.log("both team won the match")
+        // }else{
+        //     console.log("no one won the trophy")
+        // }
+
+  ////  ////////coding challenge
+        // const bill=480;
+        
+        // const tip=bill>=50 && bill<=300 ? bill*15/100: bill*20/100;
+        // console.log(`the bill value is ${bill} , and the tip is ${tip}, total is ${bill + tip}`);
+
+        //////// challeneg
+        const calcAvg= (x1 ,x2,x3)=>(x1+x2+x3)/3;
+        const scoreDolphin=calcAvg(95,165,169);
+        const scoreKoalas=calcAvg(25,65,98); 
+
+        const checkWinner=function(avgDolphin, avgKoalas){
+            if(avgDolphin>= 2*avgKoalas){
+                console.log(`Dolphin wins ${avgDolphin} vs ${avgKoalas}`);
+            }else if(avgKoalas>=2*avgDolphin) {
+                console.log(`Koalas wins ${avgKoalas} vs ${avgDolphin}`);
+            }else{
+                console.log(`no one wins`)
+            }
+        }
+        checkWinner(scoreDolphin,scoreKoalas);
+        // checkWinner(562,121)
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>HEading</h1>
+        <div class="content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit libero placeat vitae quasi, necessitatibus beatae? Molestiae debitis repudiandae quam nisi vitae ab mollitia ex voluptates.
+        </div>
+    </div>
+</body>
+</html>

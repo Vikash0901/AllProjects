@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | string n string_method</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cumque illum aliquid enim distinctio labore. Vitae explicabo, officia similique ipsam dolor error atque pariatur, totam veritatis natus incidunt ex id sit eligendi at vel voluptatum cum voluptates voluptatem laudantium dolorem.</p>
+    </div>
+    <script>
+        // // var string="harry"
+        // var string='This';
+        // var string='that';
+        // var name="harry ";
+        // var message=" website n diplay all the layout";
+        // var channel="n gud devloper";
+        
+        // // declaring string template with back ticks
+        // var temp=`${name}is gud coder ${channel}`; 
+        // console.log(temp);
+        // // console.log(string + name + message);
+
+        // // to get length of string
+        // // var len= name.length;
+        // // console.log(`Length of name is ${len}`)
+
+        // // escape sequence character 
+        // console.log("hello world \n shiva");
+
+        const markMass=78;
+        const markHeight=1.69;
+        const johnMass=95;
+        const johnHeight=1.88;
+
+        const markBmi= markMass/(markHeight*markHeight);
+        
+        const johnBmi=johnMass/(johnHeight*johnHeight);
+        // console.log(markBmi , johnBmi);
+        const higherBmi= markBmi>johnBmi;
+        // console.log(higherBmi);
+
+        if(markBmi>johnBmi){
+            console.log(`markbmi is higher ${markBmi} than johnbmi ${johnBmi}`)
+        }
+        else{
+            console.log(`johnbmi is higher ${johnBmi} than markBmi ${markBmi}`)
+        }
+
+        let height;
+        if(height){
+            console.log(" yaay height is defined")
+        }else{
+            console.log('yaay height is not defined')
+        }
+        console.log(typeof height)
+    </script>
+</body>
+</html>

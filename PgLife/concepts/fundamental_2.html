@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>jdsbdbdabdblorem3
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum itaque tenetur architecto dicta amet saepe
+            obcaecati vero at blanditiis. Cupiditate sunt quas fuga provident vel molestias quis praesentium, itaque
+            assumenda.
+        </p>
+    </div>
+    <script>
+        /////// arrays
+        // const friends=["Micheal","steven","peter"];
+        // console.log(friends);
+
+        // const y=new Array(1991,1984,2008,1564);
+        // console.log(y);
+
+        // console.log(friends[0]);
+        // console.log(friends[2]);
+        // console.log(friends.length);
+        // console.log(friends[friends.length-1]);
+        // friends[2]="Shiva";
+        // console.log(friends);
+
+        // const firstName="Jonas";
+        // const jonas=[ firstName , "dagar", 2037-2010, "Teacher", friends]
+        // console.log(jonas)
+
+        // const calcAge= function (birthYear){
+        //     return 2037-birthYear;
+        // }
+        // const years=[1990,2008,1995,2010];
+        // for (let index = 0; index < years.length; index++) {
+        //     const age=calcAge(years[index]);
+        //     console.log(age);
+        // }
+
+        // /////////CalcTip challenge
+        // const calctip= function(bill){
+        //     return bill>=50 && bill<=300 ? bill*0.15 : bill*0.2;
+        // }
+        // const bills=[125,555,49];
+        // const tips=[calctip(bills[0]),calctip(bills[1]),calctip(bills[2])];
+        // const totals=[bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];
+        // console.log(bills,tips,totals);
+
+        // /dot notatiom nd bracket
+        // const jonas={firstName:'Vikash', lastName:'Dagar',
+        //      job:'Army',age:2021-1998,friends:['Michael','Steven','Peter']};
+
+        // console.log(jonas)
+        // console.log(jonas.lastName);
+        // console.log(jonas['firstName']); //can put any expression in brackets
+
+        // const nameKey='Name';
+        // console.log(jonas['first'+ nameKey]);
+        // console.log(jonas['last'+ nameKey]);
+
+        // const intrestedIn= prompt( 'seclect one from jonas? choose btw firstName, lastName,age, and Friends');
+
+        // if(jonas[intrestedIn]){
+        //     console.log(jonas[intrestedIn]);
+        // } else{
+        //     console.log('wrong request ! choose bw FirstName,LastName,age,job & friends');
+        // }
+        // jonas.location='Jodhpur';
+        // jonas['twitter']='@vikashdagar';
+        // console.log(jonas)
+
+        // console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is ${jonas.friends[0]}`);
+
+        // ///object method
+        // const jonas = {
+        //     firstName: 'Vikash', lastName: 'Dagar',
+        //     job: 'Army', birthYear: 1998, friends: ['Michael', 'Steven', 'Peter'],
+        //     hasDriverLicense: true,
+
+            // calcAge: function (birthYear) {
+            //     return 2021 - birthYear;
+            // }
+
+            // calcAge: function(){
+            //     console.log(this) //this operator here display jonas object key value
+            //     return 2021-this.birthYear;
+            // }
+
+        //     calcAge: function(){
+        //         this.age=2021-this.birthYear;
+        //         return this.age;
+        //     }, 
+
+        //     getSummmary: function()     {
+        //         return `${this.firstName} is a ${this.calcAge()} years old ${this.job} he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license.`
+        //     }
+        // };
+        // // console.log(jonas.calcAge(jonas.birthYear));
+        // // console.log(jonas['calcAge'](1998)) //bracket notation
+        // console.log(jonas.calcAge());
+        // console.log(jonas.age);
+        // console.log(jonas.getSummmary());/// calling getsummary function
+
+
+        //coding challenge
+        // const mark={
+        //     fullNmae:'Mark Miller' , mass:78,
+        //     height:1.69, 
+        //     calcBmi: function(){
+        //         this.bmi =this.mass/this.height**2;
+        //         return this.bmi;
+        //     }
+        // };
+        // const john={
+        //     fullName:'John Smith' ,mass:112,
+        //     height:1.95,
+        //     calcBmi: function(){
+        //         this.bmi=this.mass/this.height**2;
+        //         return this.bmi2;
+        //     }
+        // };
+        // mark.calcBmi();
+        // john.calcBmi();
+        // console.log(mark.bmi , john.bmi);
+
+        // if(mark.bmi > john.bmi){
+        //     console.log(`${mark.fullName}'s BMI is ${mark.bmi} higher than ${john.fullName}'s BMI ${john.bmi}` );
+        // } else if(john.bmi > mark.bmi){
+        //     console.log(`${john.fullName}'s BMI is ${john.bmi} higher than ${mark.fullName}'s BMI ${mark.bmi}` );
+        // } else{
+        //     console.log(`both bmi is equal `)
+        // }
+
+        // ////for loop
+
+        // const jonas=['Vikash','Dagar',2037-1991,'Teacher',['Peter','Steven','Michael']];
+        // for(let i=0;i<jonas.length; i++){
+        //     console.log(jonas[i]);
+        //     console.log(typeof(jonas[i]));
+        // }
+        // const types=[];
+        // for(let i=0;i<jonas.length;i++){
+        //     // types.push(jonas[i]);
+        //     types[i]=typeof jonas[i];
+        // }
+        // console.log(types)
+
+        // const year=[1991,2007,1968,2020];
+        // const ages=[];
+        // for(let i=0;i<year.length;i++){
+        //     ages.push(2037-year[i]);
+        // }        
+        // console.log(ages);
+
+        // for(let i=0; i<jonas.length; i++){
+        //     if( typeof jonas[i] !== 'string')continue;
+        //     console.log(jonas[i], typeof jonas[i]);
+        // }
+
+        ////////challenge for u
+
+        // const bills=[22,295,176,440,37,105,10,110,86,52];
+        // const tips=[];
+        // const total=[];
+
+        // const calctip=function(bill){
+        //     return bill>50 && bill<300 ? bill*0.15 : bill*0.2 ;
+        // }
+        // for(let i=0; i<bills.length; i++){
+        //     tips.push(calctip(bills[i]));
+        //     total.push(bills[i]+tips[i]);
+        // }
+        // console.log(tips);
+        // console.log(total);
+
+        // const calcAverage=function(arr){
+        //     let sum=0;
+        //     for(let i=0; i<arr.length;i++){
+        //         // sum=sum+arr[i];
+        //         sum+=arr[i];
+        //     }
+        //     // console.log(sum);
+        //     return sum/arr.length;
+        // }
+        // console.log(calcAverage([2,3,7]));
+        // console.log(calcAverage(bills));
+        // console.log(calcAverage(total));
+        // console.log(calcAverage(tips));
+
+
+
+    ///////////////////challenge
+        // const tempratures=[3,-2,-6,-1,'error',9,13,17,15,14,9,5];
+
+        // const calcTempAmplitude= function(t1 , t2){
+        //     const temps= t1.concat(t2);
+        //     let max=temps[0];
+        //     let min=temps[0];
+        //     for(let i=0; i<temps.length; i++){
+        //         const curTem=temps[i];
+        //         if(typeof curTem !== 'number') continue;
+
+        //         if(curTem>max) max=curTem;
+        //         if(curTem<min) min=curTem;
+        //     }
+        //     console.log(max,min);
+        //     return max-min;
+        // }
+        // // calcTempAmplitude([2,0,4,"error",8,1] , [5,8,9,0]);
+        // const amplitude= calcTempAmplitude([2,0,4,"error",8,1] , [5,8,9,0]);
+        // console.log(amplitude)
+
+
+       ///////////// challenge
+        
+       const printForcast=function(arr){
+           const strArr=[]
+           for(let i=0; i<arr.length; i++){
+               strArr.push(`${arr[i]}°C in ${i+1} days... `);
+           }
+           console.log(strArr);
+           console.log(typeof strArr[0])
+       }
+       printForcast([17,21,23]);
+
+    </script>
+</body>
+
+</html>

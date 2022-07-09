@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scop_ifelse</title>
+</head>
+<body>
+    <!-- div>ul>li{Item-$}*4 -->
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+        </ul>
+    </div>
+    <script>
+        // var scope is global but inside a function var is just limited to that
+        var string1="This is a string";
+        console.log(string1);
+
+        // use let rather than var ....whatever u r making global or local variable n 
+        // let cannot be redeclared
+        // let a="u";
+        // {
+        //     let a="u6"; //this is just limited to particular block
+        //     console.log(a);
+        // }
+        // console.log(a);
+
+
+        // const b="this cannot be changed";
+        // b="i wana change this ";
+        // console.log(a);
+        
+        // conditionals r used at tym form validation ...@ is not in emailid like these example
+        // let age=2;
+        // if (age>18){
+        //     console.log("u can hv drink");
+        // }
+        // else if (age==2){
+        //     console.log("age is 2");
+        // }
+        // else{
+        //     console.log("u can hv cold drink");
+        // }
+
+        // switch case
+        const cups=11;
+        switch (cups) {
+            case 4:
+                console.log("this is cups 4");
+                break;
+
+            case 10:
+                console.log("this is cup 10");
+                break;
+
+            case 11:
+                console.log("this is cup 40");
+                break; 
+
+            case 30:
+                console.log("this is cup 30");
+                break;                   
+        
+            default:
+                console.log("the cup is none of the above");
+                break;
+        }
+    </script>
+</body>
+</html>

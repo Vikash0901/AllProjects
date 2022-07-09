@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For_while_Do-while</title>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            this is about loops
+        </div>
+    </div>
+    <div class="section"></div>
+    <div class="footer"></div>
+    <script>
+        // console.log("this is looping concept")
+        // let i=0;
+        // for(i=0;i<3;i++){
+        //     console.log(i);
+        // }
+
+        let friends=["rohit","asha","shivu","noddy","monu"];
+        // for (let index = 0; index <friends.length; index++) {
+        //     console.log("Helllo friends " + friends[index]);    
+        // }
+        
+        //foreach loop
+        // friends.forEach(function f(Element){
+        //     console.log("Hello Friends " + Element + " to modren javascript")
+        // });
+
+        //for of loop
+        // for (element of friends) {
+        //     console.log("Hello Friends " + element + " to modren javascript again") ;         
+        // }
+
+        let employee={
+            name:"Harry",
+            salary:2,
+            channel:"cwh"
+        }
+        // use this loop to itrate over objects
+        for (key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        //while loop in JS
+        let i=0;
+        // while (i<3) {
+        //     console.log(`${i} i is less than 3`);
+        //     i++;
+        // }
+
+        // do-while in js
+        let j=34;
+        do{
+            console.log(`${j} i is less than 4`);
+            j++;
+        }while(j<4);
+        // ek baar to chlega hi 
+
+    </script>
+</body>
+</html>
